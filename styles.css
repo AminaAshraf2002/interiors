@@ -345,7 +345,7 @@ nav {
 
 .header__container {
   padding-block: 10rem 15rem;
-  margin-top: -50px;
+  margin-top: 1px;
 }
 
 .header__container p {
