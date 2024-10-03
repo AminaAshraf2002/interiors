@@ -14,9 +14,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-* {
-  border: 1px solid red; /* Adds a red border around all elements */
-}
+
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -80,26 +78,52 @@ a {
   text-decoration: none;
 }
 
+/* Default Styles (Desktop - larger screens) */
 .header_logo {
-  width: 220px;
-  height: 170%;
-  margin-left: -150px;
-  margin-top: 40px;
-  position: relative;
-  z-index: 10;
+  width: 220px; /* Default logo width for larger screens */
+  height: 170%; /* Fixed height for larger screens */
+  margin-left: -10px; /* Negative margin to position the logo */
+  margin-top: 40px; /* Top margin for spacing */
+  position: relative; /* Relative positioning for z-index */
+  z-index: 10; /* Layering */
 }
 
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
+/* Large Desktop Screens (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
   .header_logo {
-    width: 150px; /* Adjust width for smaller screens */
-   
-    height: auto; /* Auto height for better scaling */
-    margin-left: -30px; /* Remove negative margin for mobile */
-    margin-top: 15px; /* Adjust margin for smaller screens */
+    width: 250px; /* Larger size for bigger screens */
+    margin-left: -120px; /* Adjust margin for better alignment */
+    margin-top: 45px; /* Adjust top margin */
   }
 }
 
+/* Tablet Screens (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .header_logo {
+    width: 180px; /* Slightly smaller logo for tablets */
+    margin-left: -30px; /* Adjust negative margin for tablet screens */
+    margin-top: 30px; /* Reduce top margin */
+  }
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .header_logo {
+    width: 150px; /* Adjust width for smaller screens */
+    height: auto; /* Auto height for better scaling */
+    margin-left: -30px; /* Remove negative margin for mobile */
+    margin-top: 18px; /* Adjust margin for smaller screens */
+  }
+}
+
+/* Very Small Mobile Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .header_logo {
+    width: 120px; /* Smaller logo for very small screens */
+    margin-left: 0; /* Remove negative margin entirely */
+    margin-top: 23px; /* Smaller top margin */
+  }
+}
 
 
 html,
