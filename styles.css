@@ -395,8 +395,8 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1.1rem;
-  background-color: rgba(240, 180, 70, 0.582); /* Make it fully transparent */
+  gap: 1rem;
+  background-color: rgba(240, 180, 70, 0.747); /* Make it fully transparent */
   transform: translateY(-100%);
   transition: 0.5s;
   z-index: -1;
