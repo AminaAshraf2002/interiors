@@ -390,13 +390,13 @@ nav {
 .nav__links {
   list-style: none;
   position: absolute;
-  width: 30%;
+  width: 40%;
   padding: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 0.3rem;
-  background-color: rgba(250, 172, 27, 0.788); /* Make it fully transparent */
+  gap: 1.1rem;
+  background-color: rgba(240, 180, 70, 0.582); /* Make it fully transparent */
   transform: translateY(-100%);
   transition: 0.5s;
   z-index: -1;
@@ -522,7 +522,7 @@ nav {
   .header {
     background-position:top center;
     background-size: cover;
-    height: 50vh;
+    height: 55vh;
   }
 
   /* Adjust button size */
