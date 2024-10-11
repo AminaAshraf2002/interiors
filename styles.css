@@ -943,6 +943,7 @@ nav {
 
   .section__description {
     font-size: 14px;
+    margin-bottom: -5px;
   }
 }
 
@@ -952,9 +953,8 @@ nav {
   }
 
   .section__description {
-    font-size: 13px;
-    margin-bottom: -30px;
-    margin-left: 10px;
+    font-size: 13px; 
+    margin-left: 5px;
   }
 }
 
