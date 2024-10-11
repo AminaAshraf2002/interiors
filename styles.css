@@ -13,15 +13,46 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
-
 .section__container {
   max-width: var(--max-width);
+  width: 100%; /* Full width for responsiveness */
   margin: auto;
-  padding: 5rem 1rem;
- 
+  padding: 5rem 1rem; /* Default padding */
 }
 
+/* Media Query for Tablets and Smaller Screens */
+@media screen and (max-width: 1024px) {
+  .section__container {
+    padding: 3rem 1rem; /* Reduce padding for tablets */
+    max-width: 90%; /* Allow more space on smaller screens */
+  }
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 768px) {
+  .section__container {
+    padding: 2rem 0.5rem; /* Further reduce padding for mobile */
+    max-width: 100%; /* Allow almost full width on mobile */
+  }
+}
+
+/* Media Query for Very Small Mobile Screens */
+@media screen and (max-width: 480px) {
+  .section__container {
+    padding: 1rem 0.5rem; /* Minimal padding for very small screens */
+    max-width: 100%; /* Full width on very small screens */
+  }
+}
+body{
+  overflow-x: hidden;
+}
+/* Optional: Ensure Child Elements are Responsive */
+.section__container img {
+  max-width: 100%; /* Ensures images scale down */
+  height: auto; /* Maintain aspect ratio */
+}
 .section__subheader {
   margin-bottom: 0.5rem;
   position: relative;
@@ -131,8 +162,11 @@ body {
   scroll-behavior: smooth;
 }
 
+
 body {
   font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: auto;
 }
 
 .header {
