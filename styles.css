@@ -282,7 +282,7 @@ nav {
   max-width: 600px;
   margin-bottom: 1rem;
   color: var(--text-light);
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .btn {
@@ -953,7 +953,8 @@ nav {
 
   .section__description {
     font-size: 13px;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
+    margin-left: 10px;
   }
 }
 
@@ -1139,7 +1140,7 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 50px; /* Space between the p and h2 */
-  margin-left: 50px;
+  margin-left: 20px;
 
 }
 
@@ -1150,8 +1151,43 @@ nav {
   color: #333; /* Darker gray color */
   margin-top: 20px;
   line-height: 1.2;
-  margin-left: 50px;
+  margin-left: 20px;
 
+}
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+  .section__subheader,
+  .section__header {
+    margin-left: 10px; /* Reduce left margin for smaller screens */
+  }
+
+  .section__subheader {
+    font-size: 14px; /* Adjust font size for better readability */
+    margin-top: 30px; /* Adjusted top margin */
+  }
+
+  .section__header {
+    font-size: 28px; /* Adjust header size */
+    margin-top: 15px;
+  }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 480px) {
+  .section__subheader,
+  .section__header {
+    margin-left: 5px; /* Minimal margin for very small screens */
+  }
+
+  .section__subheader {
+    font-size: 12px; /* Smaller font size for mobile */
+    margin-top: 20px;
+  }
+
+  .section__header {
+    font-size: 24px; /* Adjusted header size for mobile */
+    margin-top: 10px;
+  }
 }
 .offer__card {
   max-width: 2000px; /* Increased width */
