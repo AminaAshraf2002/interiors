@@ -109,9 +109,9 @@ a {
 /* Mobile Screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .header_logo {
-    width: 150px; /* Adjust width for smaller screens */
+    width: 180px; /* Adjust width for smaller screens */
     height: auto; /* Auto height for better scaling */
-    margin-left: -30px; /* Remove negative margin for mobile */
+    margin-left: -20px; /* Remove negative margin for mobile */
     margin-top: 18px; /* Adjust margin for smaller screens */
   }
 }
@@ -282,6 +282,7 @@ nav {
   max-width: 600px;
   margin-bottom: 1rem;
   color: var(--text-light);
+  margin-left: 50px;
 }
 
 .btn {
@@ -910,7 +911,7 @@ nav {
   height: auto; /* Responsive logo */
   width: 330px; /* Adjust the width of the logo */
   margin-bottom: 130px; /* Space between logo and description */
-  margin-left: -50px;
+  margin-left: -30px;
   transition: transform 0.3s ease-in-out; /* Smooth hover effect */
 }
 
@@ -1137,7 +1138,8 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 50px; /* Space between the p and h2 */
-  margin-left: 200px;
+  margin-left: 50px;
+
 }
 
 /* Styling for the <h2> element with the class 'section__header' */
@@ -1146,8 +1148,8 @@ nav {
   font-weight: 600;
   color: #333; /* Darker gray color */
   margin-top: 20px;
-  line-height: 1;
-  margin-left: 200px;
+  line-height: 1.2;
+  margin-left: 50px;
 
 }
 .offer__card {
@@ -1223,7 +1225,7 @@ nav {
 }
 
 .offer_card_details h4 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #333;
@@ -1283,39 +1285,5 @@ nav {
 
   .offer_card_details h5 {
     font-size: 16px;
-  }
-}
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .section__subheader,
-  .section__header {
-    margin-left: 20px; /* Reduced margin for smaller screens */
-  }
-
-  .section__subheader {
-    font-size: 14px; /* Smaller font size for subheader on smaller screens */
-    margin-top: 30px; /* Adjusting the top margin */
-  }
-
-  .section__header {
-    font-size: 28px; /* Adjusted font size for header on smaller screens */
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .section__subheader,
-  .section__header {
-    margin-left: 10px; /* Further reduced margin for very small screens */
-  }
-
-  .section__subheader {
-    font-size: 12px; /* Smaller font size for subheader on very small screens */
-    margin-top: 20px;
-  }
-
-  .section__header {
-    font-size: 24px; /* Adjusted font size for header on very small screens */
-    margin-top: 10px;
   }
 }
