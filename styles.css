@@ -1130,6 +1130,26 @@ nav {
     gap: 2rem;
   }
 }
+.section__subheader {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666; /* Light gray color */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 50px; /* Space between the p and h2 */
+  margin-left: 200px;
+}
+
+/* Styling for the <h2> element with the class 'section__header' */
+.section__header {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333; /* Darker gray color */
+  margin-top: 20px;
+  line-height: 1;
+  margin-left: 200px;
+
+}
 .offer__card {
   max-width: 2000px; /* Increased width */
   width: 100%; /* Full width */
@@ -1203,7 +1223,7 @@ nav {
 }
 
 .offer_card_details h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #333;
@@ -1263,5 +1283,39 @@ nav {
 
   .offer_card_details h5 {
     font-size: 16px;
+  }
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .section__subheader,
+  .section__header {
+    margin-left: 20px; /* Reduced margin for smaller screens */
+  }
+
+  .section__subheader {
+    font-size: 14px; /* Smaller font size for subheader on smaller screens */
+    margin-top: 30px; /* Adjusting the top margin */
+  }
+
+  .section__header {
+    font-size: 28px; /* Adjusted font size for header on smaller screens */
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section__subheader,
+  .section__header {
+    margin-left: 10px; /* Further reduced margin for very small screens */
+  }
+
+  .section__subheader {
+    font-size: 12px; /* Smaller font size for subheader on very small screens */
+    margin-top: 20px;
+  }
+
+  .section__header {
+    font-size: 24px; /* Adjusted font size for header on very small screens */
+    margin-top: 10px;
   }
 }
