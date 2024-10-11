@@ -554,6 +554,7 @@ nav {
   overflow: hidden;
   display: grid;
   gap: 2rem;
+  margin-bottom: -70px;
 }
 .about__image {
   overflow: hidden;
